@@ -1,0 +1,21 @@
+# Virtual environment
+**/venv/
+**/.venv/
+
+# Python cache
+**/__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# VSCode / Cursor / IDE settings
+.vscode/
+.idea/
+
+# Other folders
+UI_Similarity/Logos/
+UI_Similarity/Webpages/
+
+# OS-specific
+.DS_Store
+Thumbs.db
