@@ -8,7 +8,7 @@ import json
 API_KEY = "replaced with actual API key while model building"
 genai.configure(api_key=API_KEY)
 
-BASE_DIR = "/Users/chandralekhapamidimukkala/Desktop/ISB_Assignments/hackathon/html_data/training/"
+BASE_DIR = "/html_data/training/"
 
 OUTPUT_CSV_FILE = "phishing_dataset.csv"
 
