@@ -1,5 +1,7 @@
 from launch_URLs import launch_URLs, get_url_list, stop_server
 from utils import capture_html_screenshot, save_html_content
+from ui_similarity import check_UI_Similarity
+from transformers import CLIPProcessor, CLIPModel
 import time, os
 
 LOCAL_HOST_PATH = "http://localhost:8000"
@@ -20,10 +22,25 @@ save_html_content(file_paths)
 # url_paths = [LOCAL_HOST_PATH + path for path in url_list]
 # capture_html_screenshot(url_paths)
 
+
 # LLM analysis from text
 
-# UI Similarity from screenshots
 
+# Load CLIP once
+clip_model = CLIPModel.from_pretrained("openai/clip-vit-base-patch32")
+clip_processor = CLIPProcessor.from_pretrained("openai/clip-vit-base-patch32")
+
+# UI Similarity from screenshots
+similarity_result = {}
+screenshots_folder = os.getcwd() + '/Screenshots/'
+screenshot_files = [f for f in os.listdir(screenshots_folder)]
+for screenshot in screenshot_files:
+    similarity_result[screenshot] = check_UI_Similarity(screenshots_folder + screenshot, clip_model, clip_processor)
+
+print(similarity_result)
+
+
+# Integrate Vishnu's whois meta data
 
 # Open dashboard to show the results
 

@@ -3,3 +3,7 @@ requests
 beautifulsoup4
 pyautogui
 Pillow
+torch
+transformers>=4.30.0
+accelerate
+torchvision
