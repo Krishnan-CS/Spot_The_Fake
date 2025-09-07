@@ -15,7 +15,11 @@
 # Other folders
 UI_Similarity/Logos/
 UI_Similarity/Webpages/
+HTML_Text
+Screenshots
+mistral_phishing_lora
 
 # OS-specific
 .DS_Store
 Thumbs.db
+"mistral_phishing_lora/" 
