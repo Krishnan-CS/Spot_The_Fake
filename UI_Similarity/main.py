@@ -128,7 +128,7 @@ def find_best_match(embedding, threshold=0.8):
     # Prepare clean output for FastAPI
     result = {
         "best_match": best_match,
-        "similarity": float(best_score),  # guaranteed finite
+        "similarity": float(best_score), 
     }
 
     if best_score >= threshold:
