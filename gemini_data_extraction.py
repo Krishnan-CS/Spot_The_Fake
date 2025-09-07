@@ -9,13 +9,6 @@ import time # Import time for potential delays
 # --- API Key Management ---
 # Replace with your actual API keys
 API_KEYS = [
-    #"AIzaSyAVLhe4g0UZVEQWmZBqdKhjUZ6Z9lm1HEw",
-    "AIzaSyCqntYhz-AkkUoAldRj6J35FjVHIQVliy0",
-    #"AIzaSyB6hTrWu3auBWiAEMhX83UhOeoXTj1Skz4",
-    #"AIzaSyCmenYhWqSyRjJTSOQcizJQ0MvUo9jp2RU",
-    #"AIzaSyAPag7llh0k-9hGtkS0ohAETsNm-owoH1A",
-    #"AIzaSyCMRLGIygvWrfYISrd8UxlwrUVUAkXPIu8",
-    #"AIzaSyC_FH3fklaYm9VAVREIO5-giPO4bZZENnI"
     # Add more API keys as needed
 ]
 current_api_key_index = 0
