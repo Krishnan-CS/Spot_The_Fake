@@ -85,8 +85,8 @@ def launch_URLs(url_list, delay=5):
         time.sleep(delay)
 
         # Capture screenshot of the whole screen
-        screenshot_path = f"Screenshots/{url_path.split('/')[-1]}.png"
-        screenshot =pyautogui.screenshot(region=(0, 150, 800, 600))
+        screenshot_path = f"/phishing-web/public/Screenshots/{url_path.split('/')[-1]}.png"
+        screenshot =pyautogui.screenshot(region=(0, 150, 2000, 1200))
         screenshot.save(screenshot_path)
         print(f"Screenshot saved to {screenshot_path}")
 

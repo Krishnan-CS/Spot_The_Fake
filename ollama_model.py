@@ -62,16 +62,23 @@ class OllamaGemmaModel:
 
         JSON Structure:
         {{
-            "summary_judgement": "A concise judgment (e.g., 'Phish' or 'Not Phish')",
+            "summary_judgment": "A concise judgment (e.g., 'Phish' or 'Not Phish')",
             "confidence_score": "A score from 0.0 to 1.0 indicating confidence",
             "phishing_indicators": {{
-                "brand_impersonation": {{"status": boolean, "extracted_data": [list of strings]}},
-                "sensitive_info_request": {{"status": boolean, "extracted_data": [list of strings]}},
-                "suspicious_urls_scripts": {{"status": boolean, "extracted_data": [list of strings]}},
-                "emotional_language": {{"status": boolean, "extracted_data": [list of strings]}},
-                "misspellings_errors": {{"status": boolean, "extracted_data": [list of strings]}},
-                "other_indicators": {{"status": boolean, "extracted_data": [list of strings]}}
-            }}
+                "brand_impersonation": {{"status": boolean}},
+                "sensitive_info_request": {{"status": boolean}},
+                "suspicious_urls_scripts": {{"status": boolean}},
+                "emotional_language": {{"status": boolean}},
+                "misspellings_errors": {{"status": boolean}},
+                "other_indicators": {{"status": boolean}}
+            }},
+            "legitimate_indicators": {{
+                "verifiable_details": {{"status": boolean}},
+                "professional_tone": {{"status": boolean}},
+                "standard_features": {{"status": boolean}},
+                "other_indicators": {{"status": boolean}}
+            }},
+            "Brief_explanation": "A brief explanation of findings."
         }}
 
         Cleaned HTML Content:
